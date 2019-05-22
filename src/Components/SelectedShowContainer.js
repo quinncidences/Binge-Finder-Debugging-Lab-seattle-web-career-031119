@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Episode from './Components/Episode';
+import Episode from './Episode';
 
 class SelectedShowContainer extends Component {
 
@@ -32,7 +32,7 @@ class SelectedShowContainer extends Component {
 
   render() {
     const { selectedShow } = this.props
-
+    console.log("props: ", this.props)
     return (
       <div style={{position: "static"}}>
         <h2>{selectedShow.name}</h2>
@@ -51,7 +51,7 @@ class SelectedShowContainer extends Component {
 
 }
 
-export SelectedShowContainer;
+export default SelectedShowContainer;
 
 
 Array.prototype.unique = function() {
